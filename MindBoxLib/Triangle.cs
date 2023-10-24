@@ -28,9 +28,9 @@ namespace MindBoxLib
             return Math.Round(Math.Sqrt(p * (p - A) * (p - B) * (p - C)), 1);
         }
         public bool isRectangular() => (
-                   A == Math.Sqrt(Math.Pow(B, 2)) + Math.Sqrt(Math.Pow(C, 2))
-                || B == Math.Sqrt(Math.Pow(C, 2)) + Math.Sqrt(Math.Pow(A, 2))
-                || C == Math.Sqrt(Math.Pow(A, 2)) + Math.Sqrt(Math.Pow(B, 2))
+                   Math.Pow(A, 2) == Math.Pow(B, 2) + Math.Pow(C, 2)
+                || Math.Pow(B, 2) == Math.Pow(C, 2) + Math.Pow(A, 2)
+                || Math.Pow(C, 2) == Math.Pow(A, 2) + Math.Pow(B, 2)
             );
     }
 }
