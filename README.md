@@ -11,7 +11,7 @@
   FOREIGN KEY(Products_Id) REFERENCES Products(Id) ON DELETE CASCADE,
   FOREIGN KEY(Category_Id) REFERENCES Category(Id) ON DELETE CASCADE ) ;"
 ```
-### SQL Запрос, соответсвующий заданию
+### SQL Запрос, соответствующий заданию
 ```
   SELECT p.Name AS product, c.Name AS category FROM Products AS p
   LEFT JOIN ProductsCategory AS pc ON p.Id = pc.Products_Id
